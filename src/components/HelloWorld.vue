@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ message }}</h1>
+    <h1>{{ msg }}</h1>
     <input type="text" :value="msg" @input="changeInput" />
   </div>
 </template>
