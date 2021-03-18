@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <HelloWorld :msg="message" @messageChanged="message = $event" />
 </template>
 
 <script>
@@ -11,6 +11,12 @@ export default {
   components: {
     HelloWorld,
   },
+  data() {
+    return {
+      message: "Welcome to Your Vue.js App",
+    };
+  },
+  methods: {},
 };
 </script>
 
